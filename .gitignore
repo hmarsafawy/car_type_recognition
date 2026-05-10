@@ -32,6 +32,13 @@ MANIFEST
 *.manifest
 *.spec
 
+# Model files
+*.pth
+class_to_idx.json
+model_config.json
+*.jpg
+*.png
+
 # Installer logs
 pip-log.txt
 pip-delete-this-directory.txt
