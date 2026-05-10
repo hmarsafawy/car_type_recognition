@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Car Type Recognition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="page-shell">
+        <section class="hero-card">
+            <div class="hero-copy">
+                <span class="eyebrow">AI-powered classifier</span>
+                <h1>Car Type Recognition</h1>
+                <p>Upload a vehicle image and get a fast, confidence-scored prediction for the car type.</p>
+            </div>
+            <div class="hero-badge">Modern UI</div>
+        </section>
+
+        <section class="upload-card">
+            <div class="upload-top">
+                <div>
+                    <h2>Choose an image</h2>
+                    <p>Select a photo of a car and let the model predict the type.</p>
+                </div>
+            </div>
+
+            <div id="dropZone" class="drop-zone">
+                <div class="drop-zone-content">
+                    <p>Drag & drop an image here</p>
+                    <span>or</span>
+                    <label for="imageInput" class="file-picker">
+                        <span>Browse image</span>
+                        <input id="imageInput" type="file" accept="image/*">
+                    </label>
+                </div>
+            </div>
+
+            <div class="actions">
+                <button id="predictBtn" type="button">Predict</button>
+                <button id="clearBtn" type="button" class="secondary">Clear</button>
+            </div>
+
+            <div id="preview" class="preview-panel">
+                <div class="preview-placeholder">
+                    <span>No image selected</span>
+                </div>
+            </div>
+
+            <div id="result" class="result-panel">
+                <div class="result-empty">Prediction results will appear here.</div>
+            </div>
+        </section>
+    </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
