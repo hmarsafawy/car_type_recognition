@@ -1,0 +1,12 @@
+{
+  "Cab": 0,
+  "Convertible": 1,
+  "Coupe": 2,
+  "Hatchback": 3,
+  "Minivan": 4,
+  "Other": 5,
+  "SUV": 6,
+  "Sedan": 7,
+  "Van": 8,
+  "Wagon": 9
+}

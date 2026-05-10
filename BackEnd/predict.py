@@ -82,15 +82,15 @@ def predict(image_path: str) -> dict:
     }
 
 
-if __name__ == '__main__':
-    if len(sys.argv) < 2:
-        print('Usage: python predict.py <image_path>')
-        sys.exit(1)
+# if __name__ == '__main__':
+#     if len(sys.argv) < 2:
+#         print('Usage: python predict.py <image_path>')
+#         sys.exit(1)
 
-    result = predict(sys.argv[1])
-    print(f"\nPredicted class : {result['predicted_class']}")
-    print(f"Confidence      : {result['confidence']*100:.1f}%")
-    print(f"\nAll scores:")
-    for cls, score in result['all_scores'].items():
-        bar = '█' * int(score * 30)
-        print(f"  {cls:<15} {score*100:5.1f}%  {bar}")
+#     result = predict(sys.argv[1])
+#     print(f"\nPredicted class : {result['predicted_class']}")
+#     print(f"Confidence      : {result['confidence']*100:.1f}%")
+#     print(f"\nAll scores:")
+#     for cls, score in result['all_scores'].items():
+#         bar = '█' * int(score * 30)
+#         print(f"  {cls:<15} {score*100:5.1f}%  {bar}")
